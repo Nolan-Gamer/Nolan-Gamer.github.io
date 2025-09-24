@@ -1,0 +1,32 @@
+/* Style minimal pour afficher "25" centré */
+:root{
+  --bg1: #0f1724;
+  --bg2: #23303f;
+  --accent: #ffd166;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html,body{
+  height:100%;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.center{
+  min-height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.big{
+  display:inline-block;
+  font-weight:700;
+  font-size: clamp(48px, 20vw, 220px);
+  color: var(--accent);
+  text-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  letter-spacing: -0.03em;
+}
